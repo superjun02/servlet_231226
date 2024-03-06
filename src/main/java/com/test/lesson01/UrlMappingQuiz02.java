@@ -19,6 +19,9 @@ public class UrlMappingQuiz02 extends HttpServlet {
 		
 		PrintWriter out = response.getWriter();
 		
+		
+		// 클론에서 주석 추가
+		
 		Date now = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("현재 시간은 HH시 mm분 ss초 입니다.");
 		
