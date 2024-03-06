@@ -15,6 +15,8 @@ public class CharacterEncodingFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
+		// 깃허브테스트용 주석 추가
+		
 		// 필터 통과시 인코딩 설정
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
