@@ -36,8 +36,14 @@
 		result = (double)num1 * num2;
 		sign = "X";
 	}
+	
+	%>
+	<%!
+	public String getText(int num1, int num2, String sign, double result) {
+		return num1 + " " + sign + " " + num2 + " = " + result;
+	}
 	%>
 	<h1>계산 결과</h1>
-	<span style="font-size: 70px"><%=num1 %> <%=sign %> <%=num2 %> = <span class="text-info"><%=result %></span></span>
+	<span style="font-size: 70px"><%=num1 %> <%=sign %> <%=num2 %> = <span class="text-primary"><%=result %></span></span>
 </body>
 </html>

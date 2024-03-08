@@ -40,7 +40,7 @@
 	if (unitArr != null) {
 		for (String unit : unitArr) {
 			if (unitMap.get(unit) != null) {
-				out.print(length * unitMap.get(unit) + unit + "<br>");
+				out.print(length * unitMap.get(unit) + " " + unit + "<br>");
 			}
 		}
 	}	
