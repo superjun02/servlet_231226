@@ -138,9 +138,7 @@ list.add(map);
 
 String category = request.getParameter("category");
 
-if (category == null) {
-	category = "all";
-}
+
 %>
 <section>
 	<table class="table text-center">
@@ -158,7 +156,7 @@ if (category == null) {
 			while (iter.hasNext()) {
 				Map<String, String> target = iter.next();
 
-				if (target.get("category").equals(category) || category.equals("all")) {
+				if (target.get("category").equals(category) || category == null) {
 			%>
 			<tr>
 				<td><%=target.get("ch")%></td>

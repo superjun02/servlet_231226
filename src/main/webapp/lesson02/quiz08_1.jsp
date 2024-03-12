@@ -86,9 +86,9 @@
 				<img src="<%=book.get("image")%>" width="300px" height="405px">
 			</div>
 			<div>
-				<span class="display-3"><%= book.get("title") %></span><br>
-				<span class="text-info display-4"><%= book.get("author") %></span><br>
-				<h1><%= book.get("publisher") %></h1>
+				<div class="display-3 font-weight-bold"><%= book.get("title") %></div>
+				<div class="text-info display-4"><%= book.get("author") %></div>
+				<h1 class="text-secondary"><%= book.get("publisher") %></h1>
 			</div>
 		</div>
 

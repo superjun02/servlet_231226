@@ -4,7 +4,7 @@
 	<div>
 		<h2>
 			<a href="/lesson03/quiz01/template.jsp"
-				class="text-decoration-none text-danger">Sk Broadband IPTV</a>
+				class="text-decoration-none text-danger font-weight-bold">Sk Broadband IPTV</a>
 		</h2>
 	</div>
 </header>
