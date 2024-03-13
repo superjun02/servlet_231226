@@ -38,10 +38,14 @@ footer {
 </style>
 </head>
 <body>
+	<%
+	String musicId = (String) request.getParameter("musicId");
+	String search = request.getParameter("search");
+	%>
 	<div class="container">
 		<jsp:include page="header.jsp" />
 		<jsp:include page="nav.jsp" />
-		<jsp:include page="artistInfo.jsp" />
+		<jsp:include page="musicInfo.jsp?musicId=<%=musicId%>&search=<%= search %>" />
 		<jsp:include page="footer.jsp" />
 	</div>
 </body>
