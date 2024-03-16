@@ -50,6 +50,7 @@ footer {
 .color-orange {
 	background-color: #FF7F50;
 }
+
 .text-orange {
 	color: #FF7F50;
 }
@@ -62,19 +63,15 @@ a:hover {
 	color: white;
 }
 
-.thumbnailBox {
-	width: 350px;
-	height: 290px;
-	border: solid;
-	border-color: #FF7F50;
-	margin: 10px;
+.input-box {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+	height: 400px;
 }
-.thumbnailBox:hover {
-	background-color: #D8D8D8;
-}
-.imgBox {
-	width: 330px;
-	height: 180px;
+
+.url-input {
+	margin-right: 96px;
 }
 </style>
 </head>
@@ -82,7 +79,7 @@ a:hover {
 	<div class="container">
 		<jsp:include page="header.jsp" />
 		<jsp:include page="nav.jsp" />
-		<jsp:include page="goodsList.jsp" />
+		<jsp:include page="insert.jsp" />
 		<jsp:include page="footer.jsp" />
 	</div>
 </body>
