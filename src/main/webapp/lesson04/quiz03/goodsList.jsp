@@ -17,7 +17,7 @@ ResultSet resultSet = ms.select(selectQuery);
 		%>
 		<div class="thumbnailBox">
 			<%
-			if (resultSet.getString("B.picture") == null) {
+			if (resultSet.getString("B.image") == null) {
 			%>
 			<div class="m-2 d-flex justify-content-center">
 				<div class="imgBox d-flex justify-content-center align-items-center">
@@ -29,7 +29,7 @@ ResultSet resultSet = ms.select(selectQuery);
 			%>
 			<div class="m-2 d-flex justify-content-center">
 				<img class="imgBox" alt="물품이미지-<%=resultSet.getInt("B.id")%>"
-					src="<%=resultSet.getString("B.picture")%>">
+					src="<%=resultSet.getString("B.image")%>">
 			</div>
 			<%
 			}

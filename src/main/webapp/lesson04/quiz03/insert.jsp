@@ -71,7 +71,7 @@ ResultSet resultSet = ms.select(selectQuery);
 			</div>
 			<div class="input-group mx-5 mt-3">
 				<span class="input-group-text">이미지 url</span> <input type="text"
-					class="url-input form-control" id="picture" name="picture">
+					class="url-input form-control" id="image" name="image">
 			</div>
 			<div class="mx-5 mt-3">
 				<input type="submit" id="submit" value="저장" class="btn btn-success form-control">

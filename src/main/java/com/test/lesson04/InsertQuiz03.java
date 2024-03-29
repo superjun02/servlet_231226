@@ -1,7 +1,6 @@
 package com.test.lesson04;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.annotation.WebServlet;
@@ -20,19 +19,19 @@ public class InsertQuiz03 extends HttpServlet {
 		String title = request.getParameter("title");
 		int price = Integer.valueOf(request.getParameter("price"));
 		String description = request.getParameter("description");
-		String picture = request.getParameter("picture");
+		String image = request.getParameter("image");
 
 		MysqlService ms = MysqlService.getInstance();
 		ms.connect();
 
 		String insertQuery = "";
 		
-		if (picture.equals("")) {
+		if (image.equals("")) {
 			insertQuery = "insert into `used_goods` (`sellerId`, `title`, `description`, `price`) "
 					+ "value ('" + sellerId + "', '" + title + "', '" + description + "', '" + price + "')";
 		} else {
-			insertQuery = "insert into `used_goods` (`sellerId`, `title`, `description`, `price`, `picture`) "
-					+ "value ('" + sellerId + "', '" + title + "', '" + description + "', '" + price + "', '" + picture + "')";
+			insertQuery = "insert into `used_goods` (`sellerId`, `title`, `description`, `price`, `image`) "
+					+ "value ('" + sellerId + "', '" + title + "', '" + description + "', '" + price + "', '" + image + "')";
 		}
 
 		try {
